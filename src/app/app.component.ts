@@ -30,6 +30,15 @@ export class AppComponent {
     var klm = parseInt(this.kolom.value);
     this.papan[brs][klm] = this.giliran;
     this.showpapan();
+    this.gantigiliran();
+  }
+
+  gantigiliran() {
+    if (this.giliran == 1) {
+      this.giliran = 2;
+    } else {
+      this.giliran = 1;
+    }
   }
 
   showpapan() {
